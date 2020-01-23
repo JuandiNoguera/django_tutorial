@@ -1,0 +1,14 @@
+
+language: python
+python:
+ - "3.6"
+
+branches:
+  only:
+    - master
+
+install:
+ - pip install django
+
+script: 
+ - python3 manage.py test
